@@ -1,7 +1,7 @@
 # Shell script file
 # src/test.sh
 
-EXPECTED="Hello, World!"
+EXPECTED="Hello, Test!"
 
 OUTPUT=$(node -e "consle.log(require('./src/app')('Test'))")
 
