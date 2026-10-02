@@ -3,21 +3,21 @@ name: First Workflow
 
 # TRIGER - Workflow will invoking on the 'PUSHING' action occurs on 'Main' branch
 on: 
-push: 
-  branches: 
-    - main
+  push: 
+    branches: 
+      - main
 
 # Jobs - The actions we needed to do 
 jobs:
-example-job:
-  runs-on: ubuntu-latest
+  example-job:
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: Print a welcome message
-      run: echo "Welcome to our first Github Actions Workflow!"
+    steps:
+      - name: Print a welcome message
+        run: echo "Welcome to our first Github Actions Workflow!"
 
-    - name: Checkout repository
-      uses: actions/checkout@v6.1.0
+      - name: Checkout repository
+        uses: actions/checkout@v6.1.0
 
-    - name: List repository files
-      run: ls -la
+      - name: List repository files
+        run: ls -la
