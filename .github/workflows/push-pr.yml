@@ -1,4 +1,5 @@
-# release/**  --> any branch strt with 'release'
+name: Test Workflow 
+
 on:
     push: 
         branches:
